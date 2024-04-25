@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MatchMaking</title>
+    <link rel="icon" href="/media/mm_icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <link rel="stylesheet" href="css/final.css" />
+    <style>
+      /* Contact-Form Section */
+      #contact-form {
+        background-color: #1c3041;
+        color: #fff;
+      }
+
+      #contact-form .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+      }
+
+      #contact-form .container fieldset {
+        background-color: whitesmoke;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        border-radius: 10px;
+        border: 1px solid #000;
+      }
+
+      #contact-form .container fieldset h1 {
+        color: #00a7e1;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 10%;
+      }
+
+      #contact-form .container fieldset .input-row {
+        font-size: 1.2em;
+        color: #00a7e1;
+      }
+
+      #contact-form .container fieldset .input-row.name {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+
+      #contact-form .container fieldset .input-row label {
+        font-weight: 600;
+        font-size: 1.4em;
+      }
+
+      #contact-form .container fieldset .input-row input {
+        background-color: whitesmoke;
+        border: 0px;
+        border-bottom: 2px solid #000;
+        width: 100%;
+        font-size: 1.2em;
+        outline: none;
+        margin-top: 3.5%;
+      }
+
+      #contact-form .container fieldset .checkbox {
+        color: #1c3041;
+        font-size: 1.2em;
+      }
+
+      .submit-btn {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .submit-btn input {
+        padding: 10%;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background-color: #2f9c95;
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <img src="/media/mm_logo.png" alt="MatchMaking Logo" />
+          <ul>
+            <li>
+              <a href="final.html">Home</a>
+            </li>
+
+            <li>
+              <a href="match.html">Match</a>
+            </li>
+
+            <li>
+              <a href="competition.html">Competition</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+
+            <li>
+              <a href="forum.html">Forum</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </header>
+
+    <main>
+      <!-- Forum Section -->
+      <section id="forum">
+        <div class="container">
+          <!-- Forum-Post -->
+          <div class="forum-post">
+            <div class="forum-upper">
+              <div class="forum-profile">
+                <img
+                  src="/media/benzema.webp"
+                  alt="Karim Benzema"
+                  width="52"
+                  height="52"
+                />
+                <h1>Karim Benzema</h1>
+              </div>
+              <div class="forum-text">
+                <p>
+                  Hays is one of the most underrated places in the US, I enjoy
+                  my time here alot, meeting new faces and most of them are
+                  friendly.
+                </p>
+              </div>
+              <div class="interact-button">
+                <div class="like">
+                  <img
+                    src="/media/like.png"
+                    alt="Like Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Like</p>
+                </div>
+                <div class="comment">
+                  <img
+                    src="/media/talk_icon.png"
+                    alt="Talk Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Comment</p>
+                </div>
+                <div class="share">
+                  <img
+                    src="/media/share.png"
+                    alt="Share Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Share</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="forum-comment">
+              <div class="forum-profile">
+                <img
+                  src="/media/vini.webp"
+                  alt="Vini Jr"
+                  width="32"
+                  height="32"
+                />
+                <h3>Vini Jr</h3>
+              </div>
+              <div class="forum-text">
+                <p>
+                  I agree, Hays seems like a hidden gem. With a college town
+                  atmosphere and friendly people, it sounds like a wonderful
+                  place to live. What are some of your favorite things to do in
+                  Hays? Maybe I can recommend some hidden spots you haven't
+                  discovered yet.
+                </p>
+                <div class="interact-button">
+                  <div class="like">
+                    <img
+                      src="/media/like.png"
+                      alt="Like Icon"
+                      height="20"
+                      width="20"
+                    />
+                    <p>Like</p>
+                  </div>
+                  <div class="comment">
+                    <img
+                      src="/media/talk_icon.png"
+                      alt="Talk Icon"
+                      height="20"
+                      width="20"
+                    />
+                    <p>Reply</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Forum-Post -->
+
+          <div class="forum-post">
+            <div class="forum-upper">
+              <div class="forum-profile">
+                <img
+                  src="/media/rodrygo.webp"
+                  alt="Rodrygo Goes"
+                  width="52"
+                  height="52"
+                />
+                <h1>Rodrygo Goes</h1>
+              </div>
+              <div class="forum-text">
+                <p>
+                  Chiefs Kingdom, let's gooooo! It's still early in the
+                  offseason, but I'm already itching for some football. Can't
+                  wait to see Mahomes sling some lasers and Kelce haul in some
+                  touchdowns next season. Who else is excited for the return of
+                  Chiefs football? #ChiefsKingdom #RunItBack
+                </p>
+              </div>
+              <div class="interact-button">
+                <div class="like">
+                  <img
+                    src="/media/like.png"
+                    alt="Like Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Like</p>
+                </div>
+                <div class="comment">
+                  <img
+                    src="/media/talk_icon.png"
+                    alt="Talk Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Comment</p>
+                </div>
+                <div class="share">
+                  <img
+                    src="/media/share.png"
+                    alt="Share Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Share</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="forum-comment">
+              <div class="forum-profile">
+                <img
+                  src="/media/rice.webp"
+                  alt="Declan Rice"
+                  width="32"
+                  height="32"
+                />
+                <h3>Declan Rice</h3>
+              </div>
+              <div class="forum-text">
+                <p>
+                  "Love the dedication! Here's to hoping for a loud and
+                  energetic season at Arrowhead."
+                </p>
+                <div class="interact-button">
+                  <div class="like">
+                    <img
+                      src="/media/like.png"
+                      alt="Like Icon"
+                      height="20"
+                      width="20"
+                    />
+                    <p>Like</p>
+                  </div>
+                  <div class="comment">
+                    <img
+                      src="/media/talk_icon.png"
+                      alt="Talk Icon"
+                      height="20"
+                      width="20"
+                    />
+                    <p>Reply</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="forum-post">
+            <div class="forum-upper">
+              <div class="forum-profile">
+                <img
+                  src="/media/saka.webp"
+                  alt="Bukayo Saka"
+                  width="52"
+                  height="52"
+                />
+                <h1>Bukayo Saka</h1>
+              </div>
+              <div class="forum-text">
+                <p>
+                  The play-in games were insane! So happy the Lakers pulled
+                  through against the Warriors! Who else is hyped for the first
+                  round? Looking forward to seeing Lebron James go off! #NBA
+                  Playoffs #WeBelieve #TimeToWin
+                </p>
+              </div>
+              <div class="interact-button">
+                <div class="like">
+                  <img
+                    src="/media/like.png"
+                    alt="Like Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Like</p>
+                </div>
+                <div class="comment">
+                  <img
+                    src="/media/talk_icon.png"
+                    alt="Talk Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Comment</p>
+                </div>
+                <div class="share">
+                  <img
+                    src="/media/share.png"
+                    alt="Share Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Share</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="forum-comment">
+              <div class="forum-profile">
+                <img
+                  src="/media/white.webp"
+                  alt="Ben White"
+                  width="32"
+                  height="32"
+                />
+                <h3>Ben White</h3>
+              </div>
+              <div class="forum-text">
+                <p>
+                  "Me trying to stay focused at work knowing NBA playoff games
+                  are about to start: #NBAPlayoffsDistracted"
+                </p>
+                <div class="interact-button">
+                  <div class="like">
+                    <img
+                      src="/media/like.png"
+                      alt="Like Icon"
+                      height="20"
+                      width="20"
+                    />
+                    <p>Like</p>
+                  </div>
+                  <div class="comment">
+                    <img
+                      src="/media/talk_icon.png"
+                      alt="Talk Icon"
+                      height="20"
+                      width="20"
+                    />
+                    <p>Reply</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="forum-post">
+            <div class="forum-upper">
+              <div class="forum-profile">
+                <img
+                  src="/media/rashford.webp"
+                  alt="Marcus Rashford"
+                  width="52"
+                  height="52"
+                />
+                <h1>Marcus Rashford</h1>
+              </div>
+              <div class="forum-text">
+                <p>
+                  Can't believe Real Madrid pulled off another penalty shootout
+                  win! Man City deserved better, but that's the beauty (and
+                  frustration) of the Champions League. Who else is buzzing for
+                  the semifinals? PSG vs. Bayern feels like a classic in the
+                  making! #UCL #Drama #SemiFinalHype
+                </p>
+              </div>
+              <div class="interact-button">
+                <div class="like">
+                  <img
+                    src="/media/like.png"
+                    alt="Like Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Like</p>
+                </div>
+                <div class="comment">
+                  <img
+                    src="/media/talk_icon.png"
+                    alt="Talk Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Comment</p>
+                </div>
+                <div class="share">
+                  <img
+                    src="/media/share.png"
+                    alt="Share Icon"
+                    height="28"
+                    width="28"
+                  />
+                  <p>Share</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="forum-comment">
+              <div class="forum-profile">
+                <img
+                  src="/media/maguire.webp"
+                  alt="Harry Maguire"
+                  width="32"
+                  height="32"
+                />
+                <h3>Harry Maguire</h3>
+              </div>
+              <div class="forum-text">
+                <p>
+                  "Ugh, those penalty shootouts are killer! My heart can't take
+                  much more. But hey, at least we're guaranteed another exciting
+                  Champions League night! #UCLNight"
+                </p>
+                <div class="interact-button">
+                  <div class="like">
+                    <img
+                      src="/media/like.png"
+                      alt="Like Icon"
+                      height="20"
+                      width="20"
+                    />
+                    <p>Like</p>
+                  </div>
+                  <div class="comment">
+                    <img
+                      src="/media/talk_icon.png"
+                      alt="Talk Icon"
+                      height="20"
+                      width="20"
+                    />
+                    <p>Reply</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Forum Section -->
+    </main>
+
+    <footer>
+      <div class="container">
+        <h2>Connect with Us</h2>
+        <div class="social-media">
+          <a href="#">
+            <img
+              src="media/yt_logo.png"
+              alt="Youtube Logo"
+              height="32"
+              width="32"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="media/fb_logo.png"
+              alt="Facebook Logo"
+              height="32"
+              width="32"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="media/ig_logo.png"
+              alt="Instagram Logo"
+              height="32"
+              width="32"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="media/tt_logo.png"
+              alt="Twitter Logo"
+              height="32"
+              width="32"
+            />
+          </a>
+        </div>
+
+        <div class="link">
+          <ul>
+            <li>
+              <a href="final.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="match.html">Match</a>
+            </li>
+
+            <li>
+              <a href="competition.html">Competition</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="copyright">
+          <img
+            src="media/copyright_logo.png"
+            alt="Copyright Sign"
+            height="48"
+            width="48"
+          />
+          <p>Copyright MatchMaking | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

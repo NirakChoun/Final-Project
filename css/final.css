@@ -1,0 +1,1388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body 
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    background-color: #FAF9F6;
+}
+
+/* Utility Classes */
+.container 
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.highlight
+{
+    color: #FFC000;
+}
+
+/* Button */
+.blue-button 
+{
+    background-color: #4681f4;
+    color: #fff;
+    padding: 1.3%;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.blue-button:hover
+{
+    background-color: #0047AB;
+    color: #fff;
+}
+
+.orange-button
+{
+    background-color: #D22B2B;
+    color: #fff;
+    padding: 3%;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.green-button
+{
+    background-color: #228B22;
+    color: #fff;
+    padding: 3%;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Navbar */
+.navbar .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container ul
+{
+    display: flex;
+    gap: 30px;
+    font-size: 1.2em;
+}
+
+.navbar .container li
+{
+    list-style-type: none;
+}
+
+.navbar .container a
+{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar .container a:hover,
+.navbar .container a:focus
+{
+    color: #fff;
+    background-color: #D22B2B;
+    border-radius: 10px;
+    padding: 7%;
+    /* font-weight: bold; */
+}
+
+.navbar .container img 
+{
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+}
+
+/* Hero Section */
+#hero
+{
+    padding: 11% 1.2%;
+    /* background-color: #FF7518; */
+}
+
+#hero .container
+{
+    display: flex;
+    align-items: center;
+}
+
+#hero .container .highlight
+{
+    display: block;
+}
+
+#hero .hero-content h1
+{
+    font-size: 3em;
+    line-height: 1.4em;
+}
+
+#hero .hero-content p
+{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#hero .hero-content p,
+#hero .hero-content button
+{
+    margin-top: 5%;
+}
+
+#hero img 
+{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Video Section */
+#video
+{
+    padding: 2%;
+    text-align: center;
+    background-color: #28282B;
+    color: #fff;
+}
+
+#video h1
+{
+    font-size: 3em;
+    padding: 5%;
+    line-height: 1.5em;
+}
+
+#video .video-content
+{
+    padding: 5% 0;
+}
+
+#video .video-content video
+{
+    width: 85%; 
+    height: 85%;
+    cursor: pointer;
+}
+
+/* Intro Section */
+#intro
+{
+    padding-bottom: 10%;
+}
+
+#intro h1
+{
+    text-align: center;
+    padding: 5%;
+    font-size: 3em;
+}
+
+#intro .container
+{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+#intro .container .card
+{
+    background-color: #F3F9D2;
+    border-radius: 10px;
+    border: 1px solid #000;
+    line-height: 1.7em;
+}
+
+#intro .container .card .card-content
+{
+    padding: 5%;
+}
+
+#intro .container .card .card-content h3
+{
+    font-size: 1.4em;
+}
+
+#intro .container .card .card-content p
+{
+    margin-top: 8%;
+}
+
+#intro .container .card img
+{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Testimonials */
+#testimonials
+{
+    background-color: #28282B;
+    padding-bottom: 10%;
+}
+
+#testimonials h1 
+{
+    padding: 5%;
+    font-size: 3em;
+    text-align: center;
+    color: #FAF9F6;
+}
+
+#testimonials .container 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+#testimonials .container .card
+{
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+#testimonials .container .card-profile
+{
+    display: flex;
+    align-items: center;
+}
+
+#testimonials .container .card-profile img
+{
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+#testimonials .container .card-profile div
+{
+    margin-left: 2%;
+}
+
+#testimonials .container .card-profile .username
+{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#testimonials .container .card-profile .status
+{
+    opacity: 0.7;
+    text-wrap: nowrap;
+}
+
+#testimonials .container .card .card-quote
+{
+    line-height: 1.5em;
+    margin-top: 2%;
+    font-size: 1em;
+}
+
+#testimonials .container .card-bg-red
+{
+    background-color: #8B0000;
+    color: #fff;
+    grid-column: 1 / 3;
+}
+
+#testimonials .container .card-bg-light-blue
+{
+    background-color: #ADD8E6;
+    color: #000;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+#testimonials .container .card-bg-green
+{
+    grid-column: 4;
+    grid-row: 1 / 3;
+}
+
+#testimonials .container .card-bg-green img
+{
+    background-color: #228B22;
+    color: #000;
+}
+
+#testimonials .container .card-bg-green .card-quote
+{
+    margin-top: 15%;
+}
+
+#testimonials .container .card-bg-blue img
+{
+    background-color: #0047AB;
+    color: #000;
+}
+
+/* Search-Bar Section */
+#search-bar
+{
+    margin-left: 1%;
+}
+
+#search-bar .container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5% 0;
+}
+
+#search-bar .container .filter-container
+{
+    display: flex;
+    gap: 40px;
+    margin-right: 3%;
+}
+
+#search-bar .container .search,
+#search-bar .container .filter
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5%;
+}
+
+#search-bar .container .search 
+{
+    border-bottom: 3px solid #000;
+    width: 40%;
+}
+
+#search-bar .container .filter 
+{
+    border-radius: 10px;
+    border: 3px solid #000; 
+    padding: 0 2%;
+}
+
+/* Find-Match Section */
+#find-match 
+{
+    margin-left: 1%;
+}
+
+#find-match .container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 10%;
+}
+
+#find-match .container .post
+{
+    padding: 2% 3%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #000;
+    color: #28282B;
+}
+
+#find-match .container .post-upper
+{
+    display: flex;
+    gap: 30px;
+}
+
+#find-match .container .post p 
+{
+    margin-top: 3%;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.post .post-profile 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post .post-profile img
+{
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: bisque;
+}
+
+
+#find-match .container .post .post-profile p
+{
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.post .post-description 
+{
+    margin-top: 1%;
+}
+
+.post .post-description h1
+{
+    margin-bottom: 2%;
+    font-size: 2em;
+}
+
+.post .post-description .details
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.post .post-description .details .date,
+.post .post-description .details .time,
+.post .post-description .details .location,
+.post .post-description .details .sport
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post .button-action 
+{
+    display: flex;
+    gap: 15px;
+    margin-top: 2.5%;
+}
+
+.post .button-action .connect-button,
+.post .button-action .add-button
+{
+    display: flex;
+    gap: 10px;
+}
+
+.load-more
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-more .load-button
+{
+    background-color: #1C3041;
+    margin-top: 5%;
+    color: #fff;
+    padding: 1.3%;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.load-more .load-button:hover,
+.load-more .load-button:focus
+{
+    background-color: #0047AB;
+    color: #F3F9D2;
+}
+
+/* Competition Section */
+#competition
+{
+    margin-left: 1%;
+}
+
+#competition .container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 10%;
+}
+
+#competition .container .competition-table
+{
+    color: #000;
+    padding: 2.5%;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: #EBEBD3;
+}
+
+#competition .container .competition-table .competition-upper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#competition .container .competition-table .competition-upper .competition-details h1
+{
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+#competition .container .competition-table .competition-upper .competition-details p
+{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#competition .container .competition-table .competition-upper .button-action
+{
+    display: flex;
+    gap: 10px;
+    font-size: 1em;
+    text-wrap: nowrap;
+    padding: 2.5%;
+}
+
+#competition .container .competition-table table
+{
+    margin: 5% 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    width: 100%;
+    text-align: center;
+}
+
+#competition .container .competition-table table, 
+#competition .container .competition-table tr,
+#competition .container .competition-table th,
+#competition .container .competition-table td
+{
+    border-collapse: collapse;
+    padding: 2.5%;
+}
+
+#competition .container .competition-table thead
+{
+    background-color: #097969;
+    color: #fff;
+}
+
+#competition .container .competition-table tbody tr
+{
+    background-color: #F2F7F2;
+    color: black;
+}
+
+#competition .container .competition-table tbody tr:nth-of-type(even)
+{
+    background-color: #D3D3D3;
+    color: #000;
+}
+
+/* Contact-Info Section */
+#contact-info
+{
+    margin-left: 1%;
+}
+
+#contact-info .container .contact-list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 10%;
+}
+
+#contact-info .container .contact-list .contact-post
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 2.5%;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+#contact-info .container .contact-list .contact-post h1 
+{
+    font-size: 3em;
+    margin-bottom: 5%;
+}
+
+#contact-info .container .contact-list .contact-post img
+{
+    object-fit: contain;
+}
+
+#contact-info .container .contact-list .contact-post p
+{
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+#contact-info .container .contact-list .contact-post a
+{
+    text-decoration: none;
+    color: #228B22;
+}
+
+#contact-info .container .contact-list .contact-post a:hover,
+#contact-info .container .contact-list .contact-post a:focus
+{
+    color: #D22B2B;
+}
+
+/* Forum Section */
+#forum 
+{
+    margin-left: 1%;
+}
+
+#forum .container 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 10%;
+}
+
+#forum .container .forum-post
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ADD8E6;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+#forum .container .forum-post .forum-text
+{
+    margin-top: 1%;
+}
+
+#forum .container .forum-post .forum-upper
+{
+    padding: 2.5%;
+}
+
+#forum .container .forum-post .forum-profile
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#forum .container .forum-post .forum-profile img
+{
+    border-radius: 50%;
+    border: 1px solid #000;
+    max-width: 100%;
+    height: auto;
+}
+
+#forum .container .forum-post .forum-text 
+{
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+#forum .container .forum-post .interact-button
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 1%;
+}
+
+#forum .container .forum-post .interact-button .like,
+#forum .container .forum-post .interact-button .comment,
+#forum .container .forum-post .interact-button .share
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#forum .container .forum-post .forum-comment 
+{
+    padding: 2.5%;
+    background-color: #ADD8E6;
+    border-top: 1px solid #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#forum .container .forum-post .forum-comment .forum-text
+{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-top: 1%;
+}
+
+#forum .container .forum-post .forum-comment .interact-button p
+{
+    font-size: 0.8em;
+}
+
+/* Footer */
+footer
+{
+    padding: 3% 0;
+    /* background-color: #333; */
+    color: #333;
+}
+
+footer .container 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+footer .container img,
+footer .container .copyright img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+footer .container .social-media 
+{
+    display: flex;
+    gap: 15px;
+}
+
+footer .container .link ul
+{
+    display: flex;
+    gap: 15px;
+}
+
+footer .container .link li
+{
+    list-style-type: none;
+}
+
+footer .container .link a
+{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+    transition: 0.5s;
+}
+
+footer .container .link a:hover,
+footer .container .link a:focus
+{
+    color: #D22B2B;
+}
+
+footer .container .copyright
+{
+    display: flex;
+    color: #333;
+    gap: 10px;
+    margin-top: 3%;
+    align-items: center;
+}
+
+#testimonials,
+footer 
+{
+    border-top: 1px solid #000;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    html,
+    body {
+        width: auto;
+        overflow-x: hidden;
+    }
+
+    .navbar .container 
+    {
+        flex-direction: column;
+    }
+
+    .navbar .container ul
+    {
+        gap: 15px;
+        font-size: 0.8em;
+    }
+
+    #hero 
+    {
+        padding: 5% 0;
+    }
+
+    #hero .container 
+    {
+        flex-direction: column;
+    }
+    
+    #hero .hero-content h1 
+    {
+        font-size: 2em;
+    }
+
+    #hero .hero-content p
+    {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    #hero .hero-content button 
+    {
+        margin: 5% 0 5% 30%;
+    }
+
+    #video
+    {
+        padding: 5% 0 10% 0;
+    }
+
+    #video h1
+    {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+
+    #video .video-content
+    {
+        padding: 10% 0;
+    }
+
+    #video .video-content video
+    {
+        width: 100%; 
+        height: 100%;
+    }
+
+    #intro h1
+    {
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+
+    #intro .container
+    {
+        flex-direction: column;
+    }
+
+    #testimonials h1 
+    {
+        padding: 10% 0;
+        font-size: 2em;
+    }
+
+    #testimonials .container 
+    {
+        grid-template-columns: 1fr; 
+    }
+
+    #testimonials .container .card-profile .status
+    {
+        text-wrap: wrap;
+    }
+
+    #testimonials .container .card-bg-red
+    {
+        background-color: #8B0000;
+        color: #fff;
+        grid-column: 1;
+    }
+
+    #testimonials .container .card-bg-light-blue
+    {
+        background-color: #ADD8E6;
+        color: #000;
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #testimonials .container .card-bg-green
+    {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #testimonials .container .card-bg-green .card-quote
+    {
+        margin-top: 3%;
+    }
+
+    #search-bar .container 
+    {
+        flex-direction: column;
+    }
+
+    #search-bar .container .filter-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #search-bar .container .search,
+    #search-bar .container .filter
+    {
+        font-size: 0.8em;
+        margin-top: 5%;
+    }
+
+    #search-bar .container .filter 
+    {
+        padding: 0 2%;
+    }
+
+    #search-bar .container .search 
+    {
+        border-bottom: 3px solid #000;
+        width: 100%;
+    }
+
+    #find-match .container .post p 
+    {
+        font-size: 1em;
+        padding: 5%;
+        text-align: center;
+    }
+
+    #find-match .container .post-upper
+    {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .post .post-profile 
+    {
+        margin-top: 5%;
+    }
+
+    .post .post-description h1
+    {
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .post .post-description .details
+    {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .post .button-action 
+    {
+        gap: 10px;
+        padding-bottom: 5%;
+    }
+
+    .blue-button
+    {   
+        font-size: 1em;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .orange-button,
+    .green-button
+    {
+        font-size: 1em;
+    }
+
+    #competition .container .competition-table
+    {
+        padding: 5%;
+    }
+
+    #competition .container .competition-table .competition-upper
+    {
+        flex-direction: column;
+    }
+
+    #competition .container .competition-table .competition-upper .competition-details h1
+    {
+        font-size: 2em;
+    }
+
+    #competition .container .competition-table .competition-upper .competition-details p
+    {
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    #competition .container .competition-table .competition-upper .button-action
+    {
+        margin-right: auto;
+        margin-left: 2.5%;
+    }
+
+    #competition .container .competition-table table
+    {
+        font-size: 0.6em;
+    }
+
+    #competition .container .competition-table th
+    {
+        padding: 0.5%;
+    }
+
+    #contact-info 
+    {
+        margin-top: 10%;
+    }
+
+    #contact-info .container .contact-list .contact-post
+    {
+        flex-direction: column;
+    }
+
+    #contact-info .container .contact-list
+    {
+        
+    }
+
+    #contact-info .container .contact-list .contact-post h1 
+    {
+        font-size: 1.5em;
+    }
+
+    #contact-info .container .contact-list .contact-post img
+    {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #contact-info .container .contact-list .contact-post p
+    {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    #contact-form .container
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #contact-form .container fieldset h1 
+    {
+        font-size: 2em;
+        line-height: 1.5em;
+        text-wrap: nowrap;
+    }
+
+    #contact-form .container fieldset .input-row.name
+    {
+        flex-direction: column;
+    }
+
+    #contact-form .container fieldset .input-row label
+    {
+        font-size: 1.2em;
+    }
+
+    #contact-form .container fieldset .input-row input
+    {
+        font-size: 1em;
+    }
+
+    #contact-form .container fieldset .checkbox 
+    {
+        font-size: 1em;
+    }
+
+    #forum .container .forum-post
+    {
+        margin-top: 10%;
+    }
+
+    #forum .container .forum-post .forum-upper, 
+    #forum .container .forum-post .forum-comment
+    {
+        padding: 4%;
+    }
+
+    #forum .container .forum-post .forum-profile h1
+    {
+        font-size: 1.2em;
+    }
+
+    #forum .container .forum-post .forum-text
+    {
+        font-size: 1em;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #forum .container .forum-post .interact-button
+    {
+        font-size: 0.8em;
+        margin-top: 5%;
+        justify-content: center;
+    }
+
+    #forum .container .forum-post .interact-button .like img,
+    #forum .container .forum-post .interact-button .comment img,
+    #forum .container .forum-post .interact-button .share img
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+    #forum .container .forum-post .forum-comment .forum-text
+    {
+        font-size: 0.9em;
+        line-height: 1.3em;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    footer .container .link ul
+    {
+        padding: 5% 0;
+        gap: 15px;
+    }
+
+    footer .container .link a
+    {
+        font-size: 0.8em;
+    }
+
+    footer .container .copyright img
+    {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Media Query for Tablets and Small Laptops */
+@media (min-width: 481px) and (max-width: 1024px) 
+{
+    html,
+    body {
+        width: auto;
+        overflow-x: hidden;
+    }
+    
+    .navbar .container 
+    {
+        flex-direction: column;
+    }
+    
+    #hero .container 
+    {
+        flex-direction: column;
+    }
+
+    #hero .hero-content button 
+    {
+        margin: 5% 0 5% 40%;
+    }
+
+    #video
+    {
+        padding: 5% 0 10% 0;
+    }
+
+    #video h1
+    {
+        line-height: 1.5em;
+    }
+
+    #video .video-content
+    {
+        padding: 10% 0;
+    }
+
+    #video .video-content video
+    {
+        width: 100%; 
+        height: 100%;
+    }
+
+    #intro h1
+    {
+        line-height: 1.2em;
+    }
+
+    #intro .container
+    {
+        flex-direction: column;
+    }
+
+    #intro .container .card .card-content h3
+    {
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+
+    #intro .container .card .card-content p
+    {
+        margin-top: 5%;
+        font-size: 1.2em;
+    }
+
+    #testimonials h1 
+    {
+        padding: 10% 0;
+    }
+
+    #testimonials .container 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #testimonials .container .card-bg-red
+    {
+        background-color: #8B0000;
+        color: #fff;
+        grid-column: 1;
+    }
+
+    #testimonials .container .card-bg-light-blue
+    {
+        background-color: #ADD8E6;
+        color: #000;
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #testimonials .container .card-bg-green
+    {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #testimonials .container .card-bg-green .card-quote
+    {
+        margin-top: 3%;
+    }
+
+    #testimonials .container .card .card-quote
+    {
+        font-size: 1.3em;
+    }
+
+    #search-bar .container 
+    {
+        flex-direction: column; 
+    }
+
+    #search-bar .container .search
+    {
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    #search-bar .container .filter-container
+    {
+        gap: 25px;
+        margin-top: 7.5%;
+        margin-bottom: 5%;
+    }
+
+    .post .post-profile 
+    {
+        text-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .post .post-description h1
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+    }
+
+    .post .post-description .details
+    {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    #find-match .container .post p 
+    {
+        font-size: 1em;
+    }
+
+    #contact-info .container .contact-list .contact-post h1 
+    {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+
+    #forum .container .forum-post
+    {
+        margin-top: 10%;
+    }
+
+    #forum .container .forum-post .forum-comment .forum-text
+    {
+        line-height: 1.5em;
+    }
+
+    footer .container .copyright 
+    {
+        align-items: center;
+    }
+}
+
+/* Media Query Competition Page */
+@media (min-width: 768px) and (max-width: 1023px) 
+{
+    #competition .container .competition-table .competition-upper
+    {
+        flex-direction: column;
+    }
+
+    #competition .container .competition-table .competition-upper .competition-details
+    {
+        padding: 2.5%;
+    }
+
+    #competition .container .competition-table .competition-upper .competition-details h1
+    {
+        text-wrap: nowrap;
+        font-size: 2em;
+    }
+}
+
+
